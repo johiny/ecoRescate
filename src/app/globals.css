@@ -3,25 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --paynes-gray: #575C70ff;
+  --cool-white: #FBFDFEff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --paynes-gray: #575C70ff;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--cool-white);
+  background-color: var(--paynes-gray);
+}
+
+.dynamicMap {
+  position: relative;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  height: 100%; /* Inicialmente establece la altura en 0 para mantener el espacio en el DOM */
+  transition: transform 0.3s ease; /* Agrega una transición suave para el escalado */
+  transform-origin: top left; 
+}
+
+@media screen and (max-width: 1750px) {
+  .dynamicMap {
+    transform: scale(0.6);
+  }
 }
