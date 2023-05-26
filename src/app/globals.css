@@ -16,12 +16,11 @@
 body {
   color: var(--cool-white);
   background-color: var(--paynes-gray);
+  overflow-x: hidden;
 }
 
 .dynamicMap {
   position: relative;
-  width: 100%; /* Ajusta el ancho según sea necesario */
-  height: 100%; /* Inicialmente establece la altura en 0 para mantener el espacio en el DOM */
   transition: transform 0.3s ease; /* Agrega una transición suave para el escalado */
   transform-origin: top left; 
 }
@@ -30,4 +29,24 @@ body {
   .dynamicMap {
     transform: scale(0.6);
   }
+}
+
+.countryName{
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-weight: 600;
+}
+
+.countryEffect {
+  filter: invert(100%) sepia(95%) saturate(270%) hue-rotate(80deg) brightness(90%) contrast(96%);
+}
+.countryEffect:hover {
+  transition: all 0.3s ease;
+  filter: sepia(100%) saturate(300%) hue-rotate(320deg) brightness(75%) contrast(165%);
+  transform: translateY(-12px);
+}
+
+.countryEffect:hover > .countryName {
+ opacity: 1;
 }
