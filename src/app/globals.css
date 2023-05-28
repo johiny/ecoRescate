@@ -50,3 +50,14 @@ body {
 .countryEffect:hover > .countryName {
  opacity: 1;
 }
+
+.animalCardEffect{
+  opacity: 0.8;
+  left: -100%;
+  transition: all 0.4s ease;
+}
+
+.animalCardContainer:hover .animalCardEffect{
+  left: 0%;
+  width: 100%;
+}
