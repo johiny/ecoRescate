@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --paynes-gray: #575C70ff;
-  --cool-white: #FBFDFEff;
+  --paynes-gray: #40513B;
+  --cool-white: #EDF1D6;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --paynes-gray: #575C70ff;
   }
-}
+} */
 
 body {
   color: var(--cool-white);
@@ -60,4 +60,43 @@ body {
 .animalCardContainer:hover .animalCardEffect{
   left: 0%;
   width: 100%;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.bigAnimalCard{
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.smallAnimalCard1{
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.smallAnimalCard2{
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+.smallAnimalCard3{
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }

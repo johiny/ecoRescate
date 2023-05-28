@@ -1,4 +1,4 @@
-import bioRescate from '@/media/bioRescate_logo.svg'
+import bioRescate from '@/media/bioRescate_logo_1.svg'
 import Image from 'next/image'
 const Navbar = () => {
   return (
