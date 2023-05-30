@@ -1,10 +1,10 @@
 import AnimalCard from "@/components/AnimalCard"
-import { animalType } from "@/utils/types"
+import { animalType} from "@/utils/types"
 
-const CountryPage = async ({params} : {params : {country : string}}) => {
-  let animals : [] = []
+const mostInDangerPage =  async () => {
+    let animals : [] = []
   try{
-    const res = await fetch(`http://localhost:3000/api/paises/${params.country}`)
+    const res = await fetch(`http://localhost:3000/api/paises/paco`)
     const data  = await res.json()
     if(data){
       animals = data
@@ -14,8 +14,8 @@ const CountryPage = async ({params} : {params : {country : string}}) => {
     console.log(e)
   }
   return (
-    <div className="flex flex-col mt-5">
-        <h2 className="text-5xl font-bold text-center">{params.country.toUpperCase()}</h2>
+    <div className="flex flex-col mt-5 ">
+        <h2 className="text-5xl font-bold text-center">ANIMALES EN MAYOR RIESGO</h2>
         <div className="flex flex-wrap flex-row justify-center mt-5 gap-16 px-10">
           {animals.map((animal : animalType) => {
             console.log(animal.name)
@@ -29,4 +29,4 @@ const CountryPage = async ({params} : {params : {country : string}}) => {
   )
 }
 
-export default CountryPage
+export default mostInDangerPage

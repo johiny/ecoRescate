@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { animalType, nextResponse } from "@/utils/types"
+import { animalType } from "@/utils/types"
 
 const Animalpage = async ({params} : {params : {animal : string}}) => {
   let animal : animalType = {
@@ -10,10 +10,10 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     population_trend: "up",
   }
   try{
-    let res = await fetch(`http://localhost:3000/api/animales/${params.animal}`)
-    res = await res.json()
-    if(res){
-      animal = res as any
+    const res = await fetch(`http://localhost:3000/api/animales/${params.animal}`)
+    const data = await res.json()
+    if(data){
+      animal = data
     }
   }
   catch(e){
