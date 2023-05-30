@@ -1,16 +1,19 @@
 import Image from "next/image";
 import tapir from "@/media/tapir.png";
-const AnimalCard = () => {
+import { animalType } from "@/utils/types"
+const AnimalCard = ({animal} : {animal : animalType}) => {
   return (
     <div className="flex flex-col w-80 h-96 border-2 border-gray-300 relative animalCardContainer overflow-hidden">
       <Image
-        src={tapir}
-        alt="tapir"
-        className="object-cover h-full object-right-top cursor-pointer"
+        src={animal.img}
+        alt={animal.name}
+        className="object-cover h-full object-center cursor-pointer"
+        width={400}
+        height={400}
       />
       <div className="flex flex-col justify-center items-center absolute animalCardEffect bg-gray-700 opacity-80 cursor-pointer  w-full h-full">
-        <h2 className="text-xl font-bold">Tapir</h2>
-        <p className="text-sm font-semibold text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae earum consectetur, aliquam rerum magni doloremque distinctio, ab debitis, aspernatur voluptatem iure recusandae adipisci veniam alias? Magnam cupiditate ad nihil vitae?</p>
+        <h2 className="text-xl font-bold">{animal.name}</h2>
+        {/* <p className="text-sm font-semibold text-center">{animal.description}</p> */}
       </div>
     </div>
   );
