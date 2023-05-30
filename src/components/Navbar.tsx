@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-around items-center w-full md:justify-center md:gap-4">
         <span className="opacity-50 cursor-pointer hover:opacity-90">Inicio</span>
         <span className="opacity-50 cursor-pointer hover:opacity-90">Mayor Riesgo</span>
-        <span className="opacity-50 cursor-default">*</span>
+        <span className="opacity-50 cursor-default ">🌎</span>
         <span className="opacity-50 cursor-pointer hover:opacity-90">Acerca de</span>
         <span className="opacity-50 cursor-pointer hover:opacity-90">Contacto</span>
         </div>
