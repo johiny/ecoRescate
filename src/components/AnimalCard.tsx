@@ -1,8 +1,9 @@
 import Image from "next/image";
-import tapir from "@/media/tapir.png";
 import { animalType } from "@/utils/types"
+import Link from "next/link";
 const AnimalCard = ({animal} : {animal : animalType}) => {
   return (
+    <Link href={`/animales/${animal.name}`}>
     <div className="flex flex-col w-80 h-96 border-2 border-gray-300 relative animalCardContainer overflow-hidden">
       <Image
         src={animal.img}
@@ -16,6 +17,7 @@ const AnimalCard = ({animal} : {animal : animalType}) => {
         {/* <p className="text-sm font-semibold text-center">{animal.description}</p> */}
       </div>
     </div>
+  </Link>
   );
 };
 
