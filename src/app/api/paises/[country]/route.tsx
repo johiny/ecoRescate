@@ -8,7 +8,11 @@ export async function GET() {
   //   } ,
   // });
   // const data = await res.json();
- 
   const data = await fakeApiAnimales()
-  return NextResponse.json(data);
+  if(data){
+    return NextResponse.json({data})
+  }
+  else{
+    return NextResponse.json("error terrible")
+  }
 }

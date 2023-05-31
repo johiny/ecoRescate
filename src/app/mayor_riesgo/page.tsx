@@ -4,8 +4,8 @@ import { animalType} from "@/utils/types"
 const mostInDangerPage =  async () => {
     let animals : [] = []
   try{
-    const res = await fetch(`http://localhost:3000/api/paises/paco`)
-    const data  = await res.json()
+    const res = await fetch(`http://localhost:3000/api/paises/paco`, {cache:'force-cache', next: { revalidate: 3600 * 6}})
+    const {data}  = await res.json()
     if(data){
       animals = data
     }

@@ -1,5 +1,5 @@
 export const fakeApiAnimales = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 200));
     return [
         {name:"Elefante de Sabana",
         category:"EN",

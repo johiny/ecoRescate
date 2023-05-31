@@ -4,7 +4,7 @@ import { animalType } from "@/utils/types"
 const CountryPage = async ({params} : {params : {country : string}}) => {
   let animals : [] = []
   try{
-    const res = await fetch(`http://localhost:3000/api/paises/${params.country}`)
+    const res = await fetch(`http://localhost:3000/api/paises/${params.country}`, {cache:'force-cache', next: { revalidate: 3600 * 6}})
     const {data}  = await res.json()
     if(data){
       animals = data
