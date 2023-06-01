@@ -1,6 +1,7 @@
 import bioRescate from '@/media/bioRescate_logo_1.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import AuthButton from '@/components/AuthButton'
 const Navbar = () => {
   return (
     <div className='flex md:flex-row flex-col py-10 w-screen justify-center items-center'>
@@ -12,7 +13,7 @@ const Navbar = () => {
         <Link href="/acerca_de"><span className="opacity-50 cursor-pointer hover:opacity-90">Acerca de</span></Link>
         <Link href="/contacto"><span className="opacity-50 cursor-pointer hover:opacity-90">Contacto</span></Link>
         </div>
-        <span className='opacity-50 cursor-pointer hover:opacity-90 text-lg border-b-2 border-e-white'>Entrar</span>
+        <AuthButton/>
     </div>
   )
 }
