@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import AuthProvider from '@/components/AuthProvider'
 import UserMenu from '@/components/UserMenu'
+import { getServerSession } from 'next-auth'
+import { authOptions } from "@/app/api/auth/[...nextauth]/route"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -10,18 +12,19 @@ export const metadata = {
   description: 'Conoce a tu amigo en peligro',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const session = await getServerSession(authOptions)
   return (
     <html lang="es">
       <body className={inter.className}>
     <AuthProvider>
         <Navbar/>
         {children}
-        <UserMenu/>
+        { session?.user &&  <UserMenu/>}
     </AuthProvider>
         </body>
     </html>
