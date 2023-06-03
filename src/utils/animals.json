@@ -1,0 +1,359 @@
+[
+    {
+        "name": "León Africano",
+        "category": "EN",
+        "population_trend": "Stable",
+        "description": "El león africano es un mamífero carnívoro de la familia Felidae que habita en África subsahariana. Es el segundo felino más grande del mundo después del tigre y el único que presenta dimorfismo sexual. Los machos tienen una melena distintiva que los hace fácilmente reconocibles.",
+        "img": "https://source.unsplash.com/random/?lion%20african"
+    },
+    {
+        "name": "Tigre de Bengala",
+        "category": "EN",
+        "population_trend": "Decreasing",
+        "description": "El tigre de Bengala es un mamífero carnívoro de la familia Felidae que habita en la India, Nepal, Bután y Bangladesh. Es el tigre más común y conocido y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+        "img": "https://source.unsplash.com/random/?bengal%20tiger"
+    },
+{
+    "name": "Oso Polar",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El oso polar es un mamífero carnívoro de la familia Ursidae que habita en el Ártico. Es el carnívoro terrestre más grande del mundo y se encuentra en peligro de extinción debido al cambio climático y la caza furtiva.",
+    "img": "https://source.unsplash.com/random/?polar%20bear"
+},
+{
+    "name": "Jirafa",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "La jirafa es un mamífero artiodáctilo de la familia Giraffidae que habita en África. Es el animal terrestre más alto del mundo y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?giraffe"
+},
+{
+    "name": "Canguro Rojo",
+    "category": "EN",
+    "population_trend": "Stable",
+    "description": "El canguro rojo es un marsupial de la familia Macropodidae que habita en Australia. Es el marsupial más grande del mundo y se caracteriza por su gran cola y sus patas traseras musculosas que le permiten saltar grandes distancias.",
+    "img": "https://source.unsplash.com/random/?red%20kangaroo"
+},
+{
+    "name": "Cocodrilo de Agua Salada",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El cocodrilo de agua salada es un reptil carnívoro de la familia Crocodylidae que habita en las regiones costeras del sudeste asiático y el norte de Australia. Es el reptil más grande del mundo y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?saltwater%20crocodile"
+},
+{
+    "name": "Leopardo de las Nieves",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El leopardo de las nieves es un mamífero carnívoro de la familia Felidae que habita en las montañas de Asia Central. Es un animal solitario y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?snow%20leopard"
+},
+{
+    "name": "Panda Gigante",
+    "category": "EN",
+    "population_trend": "Stable",
+    "description": "El panda gigante es un mamífero omnívoro de la familia Ursidae que habita en las montañas de China. Es un animal solitario y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?giant%20panda"
+},
+{
+    "name": "Puma",
+    "category": "EN",
+    "population_trend": "Stable",
+    "description": "El puma es un mamífero carnívoro de la familia Felidae que habita en América. Es un animal solitario y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?puma"
+},
+{
+    "name": "Hipopótamo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El hipopótamo es un mamífero herbívoro de la familia Hippopotamidae que habita en África. Es un animal semiacuático y se encuentra en peligro de extinción debido a la caza furtiva y la pérdida de hábitat.",
+    "img": "https://source.unsplash.com/random/?hippopotamus"
+},
+{
+    "name": "León",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El león es un mamífero carnívoro de la familia Felidae que habita en las regiones salvajes de África. Es uno de los grandes felinos más icónicos y está en peligro debido a la caza ilegal y la pérdida de su hábitat natural.",
+    "img": "https://source.unsplash.com/random/?lion"
+},
+{
+    "name": "Elefante",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El elefante es un mamífero herbívoro de la familia Elephantidae que habita en varias regiones de África y Asia. Es el animal terrestre más grande y está en peligro de extinción debido a la caza furtiva por el marfil de sus colmillos y la destrucción de su hábitat.",
+    "img": "https://source.unsplash.com/random/?elephant"
+},
+{
+    "name": "Hipopótamo pigmeo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El hipopótamo pigmeo es una especie de hipopótamo de menor tamaño que habita en las regiones de África Central. A pesar de su tamaño reducido, se encuentra en peligro de extinción debido a la destrucción de su hábitat y la caza furtiva.",
+    "img": "https://source.unsplash.com/random/?pygmy%20hippopotamus"
+},
+{
+    "name": "Hipopótamo del Nilo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El hipopótamo del Nilo es la especie más grande de hipopótamo y habita en los ríos y lagos de África. Aunque son conocidos por su apariencia tranquila, son uno de los animales más peligrosos del continente. Están amenazados principalmente por la caza ilegal y la pérdida de su hábitat.",
+    "img": "https://source.unsplash.com/random/?nile%20hippopotamus"
+},
+{
+    "name": "Hipopótamo pigmeo libérico",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El hipopótamo pigmeo libérico es una subespecie en peligro crítico de extinción. Es endémico de la región de Sierra Leona en África Occidental. A pesar de su pequeño tamaño, enfrenta múltiples amenazas, incluyendo la caza furtiva y la disminución de su hábitat.",
+    "img": "https://source.unsplash.com/random/?liberian%20pygmy%20hippopotamus"
+},
+{
+    "name": "Leopardo de las nieves",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El leopardo de las nieves es un felino nativo de las montañas de Asia Central. Su pelaje moteado le brinda camuflaje perfecto en su hábitat. Desafortunadamente, su población está disminuyendo debido a la caza ilegal y la pérdida de sus presas naturales.",
+    "img": "https://source.unsplash.com/random/?snow%20leopard"
+},
+{
+    "name": "Oso panda gigante",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El oso panda gigante es un icono de conservación y una especie en peligro crítico de extinción. Habita en las montañas de China y se alimenta principalmente de bambú. La pérdida de su hábitat y la caza furtiva continúan amenazando su supervivencia.",
+    "img": "https://source.unsplash.com/random/?giant%20panda"
+},
+{
+    "name": "Tigre de Bengala",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El tigre de Bengala es el felino más grande del mundo y habita principalmente en la India y Bangladesh. Es una especie en peligro crítico debido a la pérdida de su hábitat y la caza ilegal. Su belleza y ferocidad lo convierten en un símbolo emblemático de la conservación.",
+    "img": "https://source.unsplash.com/random/?bengal%20tiger"
+},
+{
+    "name": "Canguro rojo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El canguro rojo es una especie emblemática de Australia. Con su habilidad para saltar largas distancias, es un símbolo icónico de la fauna australiana. Sin embargo, su población se encuentra en disminución debido a la pérdida de su hábitat y la caza furtiva.",
+    "img": "https://source.unsplash.com/random/?red%20kangaroo"
+},
+{
+    "name": "Tucán toco",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El tucán toco es un ave de gran tamaño y llamativo pico que habita en las selvas de América del Sur. Es conocido por su plumaje colorido y su peculiar pico. Desafortunadamente, la deforestación y el comercio ilegal de mascotas amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?toco%20toucan"
+},
+{
+    "name": "Pez payaso",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El pez payaso, también conocido como Nemo, es un pez de colores brillantes que vive en los arrecifes de coral. Es famoso por su asociación simbiótica con las anémonas marinas. Sin embargo, el cambio climático y la degradación de los arrecifes amenazan su hábitat y supervivencia.",
+    "img": "https://source.unsplash.com/random/?clown%20fish"
+},
+{
+    "name": "Lobo gris",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El lobo gris es un magnífico depredador que habita en diversos hábitats, desde bosques hasta tundras. Forman manadas sociales y desempeñan un papel crucial en los ecosistemas. Sin embargo, la caza indiscriminada y la pérdida de su hábitat los han llevado a estar en peligro de extinción.",
+    "img": "https://source.unsplash.com/random/?gray%20wolf"
+},
+{
+    "name": "Cocodrilo del Nilo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El cocodrilo del Nilo es un reptil semiacuático que se encuentra en diversas regiones de África. Con su apariencia intimidante y poderosa mandíbula, es considerado uno de los depredadores más temibles del continente. Sin embargo, la caza ilegal y la destrucción de su hábitat amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?nile%20crocodile"
+},
+{
+    "name": "Panda rojo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El panda rojo es un pequeño mamífero que habita en las montañas del Himalaya. Con su pelaje pelirrojo y su aspecto adorable, es uno de los animales más queridos. Sin embargo, la destrucción de su hábitat y el comercio ilegal de mascotas han llevado a su clasificación como especie vulnerable.",
+    "img": "https://source.unsplash.com/random/?red%20panda"
+},
+{
+    "name": "Puma",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El puma, también conocido como león de montaña o cougar, es un felino ágil y sigiloso que habita en América. Con su capacidad para adaptarse a diversos hábitats, es uno de los depredadores más exitosos. Sin embargo, la caza y la pérdida de su hábitat lo ponen en peligro.",
+    "img": "https://source.unsplash.com/random/?mountain%20lion"
+},
+{
+    "name": "Rinoceronte blanco",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El rinoceronte blanco es una especie icónica de África. Es el segundo animal terrestre más grande después del elefante. Lamentablemente, la caza furtiva por su cuerno y la destrucción de su hábitat han llevado a su población al borde de la extinción.",
+    "img": "https://source.unsplash.com/random/?white%20rhinoceros"
+},
+{
+    "name": "Gorila de montaña",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El gorila de montaña es una de las especies de primates más amenazadas del mundo. Habita en las montañas de África Central y es conocido por su fuerza y apariencia imponente. La caza furtiva y la pérdida de su hábitat son las principales amenazas para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?mountain%20gorilla"
+},
+{
+    "name": "Cisne negro",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El cisne negro es una elegante especie de ave acuática originaria de Australia. Con su plumaje oscuro y su porte majestuoso, es considerado un símbolo de gracia y belleza. Lamentablemente, su población está disminuyendo debido a la degradación del hábitat y la introducción de especies invasoras.",
+    "img": "https://source.unsplash.com/random/?black%20swan"
+},
+{
+    "name": "Orangután de Borneo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El orangután de Borneo es uno de los grandes simios más emblemáticos. Habita en los bosques tropicales de Borneo y se caracteriza por su inteligencia y destreza. Desafortunadamente, la deforestación y el comercio ilegal de mascotas han llevado a su clasificación como especie en peligro crítico.",
+    "img": "https://source.unsplash.com/random/?bornean%20orangutan"
+},
+{
+    "name": "Cebra de Grevy",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "La cebra de Grevy es una especie de cebra que habita en las regiones áridas de África Oriental. Con su distintivo patrón de rayas, es considerada una de las cebras más hermosas. Sin embargo, la pérdida de su hábitat y la caza ilegal han llevado a una disminución alarmante de su población.",
+    "img": "https://source.unsplash.com/random/?grevy%20zebra"
+},
+{
+    "name": "Elefante africano",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El elefante africano es el animal terrestre más grande y uno de los más carismáticos. Habita en diversas regiones de África y desempeña un papel crucial en los ecosistemas. Sin embargo, la caza furtiva y la pérdida de su hábitat amenazan seriamente su supervivencia.",
+    "img": "https://source.unsplash.com/random/?african%20elephant"
+},
+{
+    "name": "León africano",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El león africano, también conocido como el rey de la selva, es un símbolo de majestuosidad y poder. Habita en las llanuras de África y forma parte del imaginario popular. No obstante, la caza ilegal y la pérdida de su hábitat amenazan su existencia.",
+    "img": "https://source.unsplash.com/random/?african%20lion"
+},
+{
+    "name": "Tortuga marina",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "La tortuga marina es un reptil marino fascinante que recorre los océanos del mundo. Con su caparazón y su habilidad para nadar largas distancias, es una especie icónica. Sin embargo, la pesca incidental, la contaminación y la destrucción de su hábitat amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?sea%20turtle"
+},
+{
+    "name": "Águila calva",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El águila calva es un majestuoso ave rapaz que es símbolo de los Estados Unidos. Con su distintivo plumaje blanco en la cabeza, es conocida por su fuerza y nobleza. Sin embargo, la pérdida de su hábitat y la contaminación son amenazas constantes para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?bald%20eagle"
+},
+{
+    "name": "Jirafa reticulada",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "La jirafa reticulada es una de las especies de jirafas más reconocidas por su distintivo patrón de manchas. Habita en las sabanas de África y se caracteriza por su cuello largo y elegante. Sin embargo, la caza furtiva y la pérdida de su hábitat amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?reticulated%20giraffe"
+},
+{
+    "name": "Lémur de cola anillada",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El lémur de cola anillada es un primate endémico de Madagascar. Con su cola larga y distintivamente anillada, es una especie única y encantadora. Sin embargo, la deforestación y el comercio ilegal de mascotas han llevado a una disminución alarmante de su población.",
+    "img": "https://source.unsplash.com/random/?ring-tailed%20lemur"
+},
+{
+    "name": "Tigre de Bengala",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El tigre de Bengala es una de las subespecies de tigre más reconocidas y majestuosas. Habita en los bosques de la India y es conocido por su belleza y ferocidad. Sin embargo, la caza furtiva y la pérdida de su hábitat son amenazas constantes para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?bengal%20tiger"
+},
+{
+    "name": "Colibrí de garganta rubí",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El colibrí de garganta rubí es un diminuto pájaro que habita en las Américas. Con su vibrante plumaje y su capacidad de vuelo estacionario, es una especie fascinante. Sin embargo, la pérdida de su hábitat y la deforestación amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?ruby-throated%20hummingbird"
+},
+{
+    "name": "Oso polar",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El oso polar es un magnífico depredador que habita en las regiones árticas. Con su pelaje blanco y su adaptación al frío extremo, es un símbolo del Ártico. Sin embargo, el cambio climático y la reducción del hielo marino representan una seria amenaza para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?polar%20bear"
+},
+{
+    "name": "Panda gigante",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El panda gigante es un icónico oso nativo de China. Con su pelaje blanco y negro distintivo, es considerado una especie en peligro de extinción. La pérdida de su hábitat y la caza furtiva son las principales amenazas que enfrenta esta adorable especie.",
+    "img": "https://source.unsplash.com/random/?giant%20panda"
+},
+{
+    "name": "Canguro rojo",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El canguro rojo es un marsupial emblemático de Australia. Con su habilidad para saltar y su bolsa marsupial, es una especie única. Sin embargo, la caza y la pérdida de su hábitat debido a la expansión humana amenazan su existencia.",
+    "img": "https://source.unsplash.com/random/?red%20kangaroo"
+},
+{
+    "name": "Águila arpía",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El águila arpía es una de las aves más grandes y poderosas del mundo. Habita en las selvas tropicales de América Central y del Sur. Lamentablemente, la deforestación y la caza furtiva han llevado a una disminución de su población.",
+    "img": "https://source.unsplash.com/random/?harpy%20eagle"
+},
+{
+    "name": "Gorila de montaña",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El gorila de montaña es uno de los primates más impresionantes y en peligro de extinción. Habita en las montañas de África Central y es conocido por su fortaleza y sociabilidad. Sin embargo, la pérdida de hábitat y la caza ilegal representan amenazas graves para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?mountain%20gorilla"
+},
+{
+    "name": "Puma",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El puma, también conocido como león de montaña o cougar, es un felino ágil y sigiloso que habita en América. Es reconocido por su belleza y adaptabilidad a diferentes tipos de hábitats. Sin embargo, la caza y la fragmentación del hábitat amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?cougar"
+},
+{
+    "name": "Lobo gris",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El lobo gris es un depredador emblemático de los bosques y las estepas del hemisferio norte. Con su inteligencia y habilidades de caza en manada, es un símbolo de la naturaleza salvaje. Sin embargo, la caza indiscriminada y la destrucción del hábitat son amenazas para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?gray%20wolf"
+},
+{
+    "name": "Cóndor andino",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El cóndor andino es una impresionante ave rapaz que habita en los Andes de América del Sur. Con su envergadura y su plumaje oscuro, es un símbolo de la región. Sin embargo, la caza, la intoxicación por plomo y la pérdida de hábitat representan amenazas para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?andean%20condor"
+},
+{
+    "name": "Rinoceronte blanco",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El rinoceronte blanco es un mamífero herbívoro que habita en África. Con su tamaño imponente y su característico labio cuadrado, es una especie en peligro crítico de extinción. La caza furtiva y la pérdida de su hábitat son las principales amenazas que enfrenta.",
+    "img": "https://source.unsplash.com/random/?white%20rhinoceros"
+},
+{
+    "name": "Tucán",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El tucán es un colorido ave tropical conocida por su pico grande y llamativo. Habita en las selvas de América Central y del Sur. Sin embargo, la deforestación y el comercio ilegal de mascotas son amenazas para su supervivencia.",
+    "img": "https://source.unsplash.com/random/?toucan"
+},
+{
+    "name": "Leopardo de las nieves",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El leopardo de las nieves es un felino magnífico que habita en las montañas de Asia Central. Con su pelaje espeso y su capacidad de camuflaje, es un depredador ágil y elusivo. Sin embargo, la caza furtiva y la degradación de su hábitat ponen en peligro su supervivencia.",
+    "img": "https://source.unsplash.com/random/?snow%20leopard"
+},
+{
+    "name": "Pinguino emperador",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El pingüino emperador es una especie icónica de la Antártida. Con su porte elegante y su capacidad de resistir las condiciones extremas, es un símbolo de la vida silvestre polar. Sin embargo, el cambio climático y la disminución de su hábitat amenazan su supervivencia.",
+    "img": "https://source.unsplash.com/random/?emperor%20penguin"
+},
+{
+    "name": "Caimán negro",
+    "category": "EN",
+    "population_trend": "Decreasing",
+    "description": "El caimán negro es un reptil imponente que habita en las selvas y ríos de América del Sur. Con su mandíbula poderosa y su capacidad de camuflaje, es un depredador temible. Sin embargo, la caza y la destrucción de su hábitat amenazan su existencia.",
+    "img": "https://source.unsplash.com/random/?black%20caiman"
+}
+]

@@ -23,8 +23,10 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     <div className="flex flex-col">
         <h2 className="text-4xl font-bold text-center">{animal.name.toUpperCase()}</h2>
         <div className="flex flex-row h-[80vh] mt-5 text-zinc-900">
-            <div className="w-1/3 backdrop-blur-md bg-ecoWhite flex -5 flex-col bigAnimalCard  ml-5">
-            <Image src={animal.img} alt="tapir" width={700} height={700} className="object-fill"/>
+            <div className="w-1/3  bg-ecoWhite flex  flex-col ml-5 relative">
+              <div className="h-1/2 overflow-hidden">
+            <Image src={animal.img} alt="tapir" width={700} height={500} className="object-cover"/>
+            </div>
                 <p className="text-base font-bold text-center p-10">
                         {animal.description}
                 </p>
