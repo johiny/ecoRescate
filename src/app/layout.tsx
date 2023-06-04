@@ -5,6 +5,7 @@ import AuthProvider from '@/components/AuthProvider'
 import UserMenu from '@/components/UserMenu'
 import { getServerSession } from 'next-auth'
 import { authOptions } from "@/app/api/auth/[...nextauth]/route"
+import AppContext from '@/components/AppContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -22,9 +23,11 @@ export default async function RootLayout({
     <html lang="es">
       <body className={inter.className}>
     <AuthProvider>
+      <AppContext>
         <Navbar/>
         {children}
         { session?.user &&  <UserMenu/>}
+      </AppContext>
     </AuthProvider>
         </body>
     </html>

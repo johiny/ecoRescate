@@ -5,9 +5,13 @@ import close from "@/media/close.svg"
 import { useState } from "react"
 import { useSession } from "next-auth/react";
 import HelpedAnimals from "./HelpedAnimals";
+import { useContext } from "react";
+import { HelpedAnimalsContext } from "./AppContext";
 const UserMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const session = useSession()
+    // creo que esto seria mejor utilizando el swr para tener un endpoint cacheado con los animales ayudados del usuario en vez del context
+    const { helpedAnimals } = useContext(HelpedAnimalsContext)
   return (
     <>
      <div onClick={() => setMenuOpen(true)} className={" absolute  w-16 h-16  top-28 right-0 flex flex-row justify-center p-2 items-center cursor-pointer"}>
@@ -19,7 +23,7 @@ const UserMenu = () => {
          onClick={() => setMenuOpen(false)}/>
          <h3 className="text-ecoDarkGreen text-2xl">Hola {session.data?.user?.name || 'paco'}!</h3>
          <h2 className="text-ecoDarkGreen text-1xl">Estos son los animales que estas apoyando</h2>
-         <HelpedAnimals/>
+         <HelpedAnimals animals={helpedAnimals}/>
     </div>
     
     </>

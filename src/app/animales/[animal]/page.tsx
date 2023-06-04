@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { animalType } from "@/utils/types"
-
+import AnimalHeIpInfoCard from "@/components/AnimalHeIpInfoCard"
 const Animalpage = async ({params} : {params : {animal : string}}) => {
   let animal : animalType = {
     name: "paco",
@@ -39,9 +39,7 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
                     <h2 className=" text-2xl text-ecoDarkGreen">Tendencia Poblacional</h2>
                     <h2 className=" text-1xl text-ecoDarkGreen">{animal.population_trend}</h2>
                 </div>
-                <div className="flex-1 bg-ecoWhite  smallAnimalCard3">
-                  
-                </div>
+                <AnimalHeIpInfoCard animal={animal}/>
             </div>
         </div>
     </div>
