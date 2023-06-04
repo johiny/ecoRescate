@@ -1,5 +1,5 @@
-import AnimalCard from "@/components/AnimalCard"
-import { animalType} from "@/utils/types"
+import FirstResults from "@/components/FirstResults"
+import MoreResults from "@/components/MoreResults"
 
 const mostInDangerPage =  async () => {
     let animals : [] = []
@@ -17,12 +17,8 @@ const mostInDangerPage =  async () => {
     <div className="flex flex-col mt-5 ">
         <h2 className="text-5xl font-bold text-center">ANIMALES EN MAYOR RIESGO</h2>
         <div className="flex flex-wrap flex-row justify-center mt-5 gap-16 px-10">
-          {animals.map((animal : animalType) => {
-            return (
-            <AnimalCard animal={animal}/>
-            )
-          })
-          }
+        <FirstResults animals={animals}/>
+        <MoreResults/>
         </div>
     </div>
   )

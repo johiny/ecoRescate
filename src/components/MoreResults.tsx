@@ -29,7 +29,7 @@ const MoreResults = () => {
          )
          })
       )
-     }) : <div>loading</div>
+     }) : <></>
     }
     <div onClick={() => refetch()} ref={targetRef}  className="w-screen h-5 bg-black"></div>
     </>

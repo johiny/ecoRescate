@@ -4,7 +4,8 @@ export const fakeApiAnimales = async (page) => {
     return animals.slice(8 * page, 8 * page + 8)
 };
 
-export const fakeApiAnimal = async () => {
+export const fakeApiAnimal = async (name) => {
     await new Promise((resolve) => setTimeout(resolve, 200));
-    return animals[8]
+    const animalindex = animals.findIndex(animal => animal.name === name)
+    return animals[animalindex]
 };
