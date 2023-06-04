@@ -1,6 +1,6 @@
-import AnimalCard from "@/components/AnimalCard"
-import { animalType } from "@/utils/types"
 
+import FirstResults from "@/components/FirstResults"
+import MoreResults from "@/components/MoreResults"
 const CountryPage = async ({params} : {params : {country : string}}) => {
   let animals : [] = []
   try{
@@ -17,15 +17,10 @@ const CountryPage = async ({params} : {params : {country : string}}) => {
     <div className="flex flex-col mt-5">
         <h2 className="text-5xl font-bold text-center">{params.country.toUpperCase()}</h2>
         <div className="flex flex-wrap flex-row justify-center mt-5 gap-16 px-10">
-          {animals.map((animal : animalType) => {
-            console.log(animal.name)
-            return (
-            <AnimalCard animal={animal}/>
-            )
-          })
-          }
+       <FirstResults animals={animals}/>
+       <MoreResults/>
         </div>
-    </div>
+        </div>
   )
 }
 

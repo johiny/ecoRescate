@@ -1,14 +1,9 @@
 import { NextResponse } from 'next/server';
  import { fakeApiAnimales } from '@/utils/fakeapi';
-export async function GET() {
-  // const res = await fetch('https://data.mongodb-api.com/...', {
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //     'API-Key': process.env.DATA_API_KEY || 'paco',
-  //   } ,
-  // });
-  // const data = await res.json();
-  const data = await fakeApiAnimales()
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const page = searchParams.get('page')
+  const data = await fakeApiAnimales(page)
   if(data){
     return NextResponse.json({data})
   }
