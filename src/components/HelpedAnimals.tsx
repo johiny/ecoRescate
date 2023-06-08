@@ -1,9 +1,16 @@
+'use client';
 import React from 'react'
 import AnimalCard from './AnimalCard'
-const HelpedAnimals = ({animals}) => {
+import { useContext } from "react";
+import { HelpedAnimalsContext } from "./AppContext";
+const HelpedAnimals = () => {
+  const { helpedAnimals } = useContext(HelpedAnimalsContext)
   return (
     <div className='flex flex-row justify-center gap-5 flex-wrap overflow-auto helpedAnimalsSection'>
-      {animals.map(animal => <AnimalCard animal={animal} mini={true}/>)}
+      {helpedAnimals?.map(animal => {
+       return(
+      <AnimalCard animal={animal} mini={true}/>
+      )})}
     </div>
   )
 }

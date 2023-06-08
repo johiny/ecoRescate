@@ -11,7 +11,6 @@ export async function GET(request: Request) {
  const url = new URL(request.url)
  let animalName = url.pathname.split("/").pop();
  animalName = decodeURIComponent(animalName)
- console.log(animalName)
   const data = await fakeApiAnimal(animalName)
   return NextResponse.json(data);
 }

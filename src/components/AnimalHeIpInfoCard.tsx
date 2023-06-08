@@ -6,7 +6,7 @@ const AnimalHeIpInfoCard = ({animal}: {animal: {}}) => {
     const session = useSession();
     const { setHelpedAnimals, helpedAnimals } = useContext(HelpedAnimalsContext)
     const helpedAnimalsChecker = () => {
-        const animalExist = helpedAnimals.some(helpedanimal => helpedanimal.name === animal.name);
+        const animalExist = helpedAnimals?.some(helpedanimal => helpedanimal.name === animal.name)
         return animalExist
     }
   return (
@@ -17,7 +17,7 @@ const AnimalHeIpInfoCard = ({animal}: {animal: {}}) => {
         :
         <>
         <h2 className="text-ecoDarkGreen text-2xl">Agrega al {animal.name} a tu lista de apadrinados</h2>
-            <button className="bg-ecoDarkGreen text-ecoWhite px-4 py-2 rounded-md mt-4 hover:bg-ecoDarkGreen/90" onClick={() => setHelpedAnimals([...helpedAnimals, animal])}>Agregar</button>
+            <button className="bg-ecoDarkGreen text-ecoWhite px-4 py-2 rounded-md mt-4 hover:bg-ecoDarkGreen/90" onClick={() => setHelpedAnimals(animal)}>Agregar</button>
         </>
         :
         <h2 className="text-ecoDarkGreen text-2xl">Para agregar animales a tu lista de apadrinados debes iniciar sesión</h2>
