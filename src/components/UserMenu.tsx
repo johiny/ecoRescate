@@ -5,7 +5,6 @@ import close from "@/media/close.svg"
 import { useState } from "react"
 import { useSession } from "next-auth/react";
 import HelpedAnimals from "./HelpedAnimals";
-
 const UserMenu = () => {
     const [menuOpen, setMenuOpen] = useState('initial')
     const session = useSession()

@@ -19,13 +19,12 @@ const AppContext = ({ children }) => {
   // fetcher para obtener la data array de los animales
 
   const fetcher = (...args) => fetch(...args).then(res => res.json())
-  const {data, mutate} = useSWR(`http://localhost:3000/api/usuarios/${session.data?.user}/helpedAnimals`, fetcher)
+  const {data, mutate} = useSWR(`http://localhost:3000/api/usuarios/${session.data?.user?.name}/helpedAnimals`, fetcher)
   //funcion para manejar el update de los animales y disparar la revalidacion de swr
   const setHelpedAnimals = async (animal) => {
-    await fetch(`http://localhost:3000/api/usuarios/${session.data?.user}/helpedAnimals`, {method: 'POST', body: JSON.stringify(animal), headers: {'Content-Type': 'application/json'}})
+    await fetch(`http://localhost:3000/api/usuarios/${session.data?.user?.name}/helpedAnimals`, {method: 'POST', body: JSON.stringify(animal), headers: {'Content-Type': 'application/json'}})
     mutate([...data , animal])
   }
-  console.log('animales en el front:',data)
   return (
     <HelpedAnimalsContext.Provider value={{helpedAnimals: data, setHelpedAnimals}}>
       {children}
