@@ -116,6 +116,7 @@ body {
 }
 
 .lateralMenuExit{
+  right: -1000px;
   animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
@@ -133,6 +134,7 @@ body {
 }
 
 .lateralMenuEntrance{
+  right: -1000px;
   animation: slide-in-right-menu 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
