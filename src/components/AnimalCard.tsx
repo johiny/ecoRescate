@@ -4,7 +4,7 @@ import Link from "next/link";
 const AnimalCard = ({animal, mini} : {animal : animalType, mini? : boolean}) => {
   return (
     <Link href={`/animales/${animal.name}`}>
-    <div className={`flex flex-col ${ mini ? `w-[8vw]` : 'w-80'} ${ mini ? `h-[20vh]` : 'h-96'} border-2 border-gray-300 relative animalCardContainer overflow-hidden`}>
+    <div data-testid="animalCard" className={`flex flex-col ${ mini ? `w-[8vw]` : 'w-80'} ${ mini ? `h-[20vh]` : 'h-96'} border-2 border-gray-300 relative animalCardContainer overflow-hidden`}>
       <Image
         src={animal.img}
         alt={animal.name}
