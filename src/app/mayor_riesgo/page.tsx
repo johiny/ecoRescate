@@ -4,7 +4,7 @@ import MoreResults from "@/components/MoreResults"
 const mostInDangerPage =  async () => {
     let animals : [] = []
   try{
-    const res = await fetch(`http://localhost:3000/api/paises/paco`, {next: { revalidate: 3600 * 6}})
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/mostInDanger`, {next: { revalidate: 3600 * 6}})
     const {data}  = await res.json()
     if(data){
       animals = data

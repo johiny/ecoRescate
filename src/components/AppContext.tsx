@@ -25,10 +25,10 @@ const AppContext = ({ children } : {children: ReactNode}) => {
   // fetcher para obtener la data array de los animales
 
   const fetcher = (...args: [RequestInfo, RequestInit?]) => fetch(...args).then(res => res.json())
-  const {data, mutate} = useSWR(`http://localhost:3000/api/usuarios/${session.data?.user?.name}/helpedAnimals`, fetcher)
+  const {data, mutate} = useSWR(`${process.env.NEXT_PUBLIC_DOMAIN}/api/usuarios/${session.data?.user?.name}/helpedAnimals`, fetcher)
   //funcion para manejar el update de los animales y disparar la revalidacion de swr
   const setHelpedAnimals = async (animal: animalType) => {
-    await fetch(`http://localhost:3000/api/usuarios/${session.data?.user?.name}/helpedAnimals`, {method: 'POST', body: JSON.stringify(animal), headers: {'Content-Type': 'application/json'}})
+    await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/usuarios/${session.data?.user?.name}/helpedAnimals`, {method: 'POST', body: JSON.stringify(animal), headers: {'Content-Type': 'application/json'}})
     mutate([...data , animal])
   }
   return (
