@@ -6,7 +6,7 @@ import { useState } from "react"
 import { useSession } from "next-auth/react";
 import HelpedAnimals from "./HelpedAnimals";
 const UserMenu = () => {
-    const [menuOpen, setMenuOpen] = useState('initial')
+    const [menuOpen, setMenuOpen] = useState<'initial' | boolean>('initial')
     const session = useSession()
   return (
     <>

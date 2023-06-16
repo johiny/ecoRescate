@@ -15,7 +15,7 @@ const getKey = (pageIndex : number, previousPageData : any, setEndReached: Funct
 }
 
 const MoreResults = () => {
-  const fetcher = (...args) => fetch(...args).then(res => res.json())
+  const fetcher = (...args: [RequestInfo, RequestInit?]) => fetch(...args).then(res => res.json())
   const [endReached, setEndReached] = useState(false)
   const { data, size, setSize, isValidating } = useSWRInfinite((...args) => getKey(...args, setEndReached), fetcher)
   const refetch = () => {
@@ -31,7 +31,7 @@ const MoreResults = () => {
     <>
      { data ? data.map(pages => {
       return(
-      pages.data.map(animal => {
+      pages.data.map((animal: animalType) => {
          return (
           <>
          <AnimalCard animal={animal}/>
