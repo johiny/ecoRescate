@@ -1,4 +1,3 @@
-import { fakeGetHelpedAnimals, fakeAddHelpedAnimals } from "@/utils/fakeapi";
 import { NextResponse } from 'next/server';
 import { getUserHelpedAnimals, updateUserHelpedAnimals, getSomeAnimals } from "@/utils/dbActions";
 
