@@ -2,6 +2,7 @@ import Image from "next/image"
 import { animalType } from "@/utils/types"
 import AnimalHeIpInfoCard from "@/components/AnimalHeIpInfoCard"
 const Animalpage = async ({params} : {params : {animal : string}}) => {
+  // animal por defecto pr si aago va mal, esto segurtamente se puede hacer mejor que asco me da jaja
   let animal : animalType = {
     name: "paco",
     category: "EN",
@@ -13,6 +14,7 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     const res = await fetch(`http://localhost:3000/api/animales/${params.animal}`, {cache: "no-cache"})
     const data = await res.json()
     if(data){
+      console.log(data)
       animal = data
     }
   }
@@ -33,7 +35,11 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
             </div>
             <div className="w-2/3 flex flex-col mx-5 gap-3">
                 <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard1 flex justify-center items-center">
-                  <h2 className=" text-2xl text-red-700">En peligro</h2>
+                  {animal.category === "LC" ?
+                    <h2 className=" text-2xl text-ecoDarkGreen">Preocupación menor</h2> :
+                    animal.category === "VU" ?
+                    <h2 className=" text-2xl text-orange-600">Vulnerable</h2> :
+                    <h2 className=" text-2xl text-red-700">En peligro</h2>}
                 </div>
                 <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard2 flex justify-center items-center flex-col">
                     <h2 className=" text-2xl text-ecoDarkGreen">Tendencia Poblacional</h2>

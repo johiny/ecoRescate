@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
- import { fakeApiAnimales } from '@/utils/fakeapi';
- import { getAnimals } from '@/utils/dbActions';
+import { getAnimals } from '@/utils/dbActions';
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   let page: string | number | null = searchParams.get('page')

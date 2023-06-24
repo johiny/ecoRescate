@@ -63,6 +63,19 @@ export const getAnimals = async (page: number, limit: number) => {
     }
 }
 
+export const getAnimal = async (animalName: string) => {
+    const client = await clientPromise
+    const db = client.db('ecoRescate')
+    const filtro = { name: animalName}
+    try{
+    const animal = await db.collection('animals').findOne(filtro)
+    return animal
+    }
+    catch(e){
+        console.log(e)
+    }
+}
+
 export const deleteHelpedAnimal = async (username: string, animalName: string) => {
     const client = await clientPromise
     const db = client.db('ecoRescate')

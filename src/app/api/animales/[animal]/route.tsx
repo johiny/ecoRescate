@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server';
- import { fakeApiAnimal } from '@/utils/fakeapi';
+import { getAnimal } from '@/utils/dbActions';
 export async function GET(request: Request) {
  const url = new URL(request.url)
  let animalName = url.pathname.split("/").pop();
  if(animalName){
    animalName = decodeURIComponent(animalName)
-   const data = await fakeApiAnimal(animalName)
+   const data = await getAnimal(animalName)
    return NextResponse.json(data);
  }
  else{
