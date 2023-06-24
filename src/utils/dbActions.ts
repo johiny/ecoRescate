@@ -51,11 +51,11 @@ export const getSomeAnimals = async (animals: string[]) => {
     }
 }
 
-export const getAnimals = async (animals: string[], skip: number, limit: number) => {
+export const getAnimals = async (page: number, limit: number) => {
     const client = await clientPromise
     const db = client.db('ecoRescate')
     try{
-    const animals = await db.collection('animals').find().skip(skip).limit(limit).toArray()
+    const animals = await db.collection('animals').find().skip(limit * page).limit(limit).toArray()
     return animals
     }
     catch(e){
