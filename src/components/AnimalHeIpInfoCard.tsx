@@ -2,7 +2,8 @@
 import { useSession } from "next-auth/react";
 import { useContext } from "react";
 import { HelpedAnimalsContext } from "./AppContext";
-const AnimalHeIpInfoCard = ({animal}: {animal: {}}) => {
+import { animalType } from "@/utils/types";
+const AnimalHeIpInfoCard = ({animal}: {animal: animalType}) => {
     const session = useSession();
     const { setHelpedAnimals, helpedAnimals } = useContext(HelpedAnimalsContext)
     const helpedAnimalsChecker = () => {

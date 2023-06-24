@@ -9,11 +9,12 @@ import { animalType } from "@/utils/types"
 
 interface AnimalContextValue {
   helpedAnimals: any[]; // Reemplaza 'any' con el tipo correcto para los animales ayudados
-  setHelpedAnimals: (animal: animalType) => Promise<void>; // Reemplaza 'animalType' con el tipo correcto para los animales
+  setHelpedAnimals: (animal: animalType) => Promise<void>;
+  deleteHelpedAnimals: (animalName: string) => Promise<void>; // Reemplaza 'animalType' con el tipo correcto para los animales
 }
 
 // contexto
-export const HelpedAnimalsContext = createContext<AnimalContextValue>({helpedAnimals: [], setHelpedAnimals: async () => {}
+export const HelpedAnimalsContext = createContext<AnimalContextValue>({helpedAnimals: [], setHelpedAnimals: async () => {}, deleteHelpedAnimals: async () => {}
 });
 
 // componente wrapper para el contexto
@@ -31,8 +32,12 @@ const AppContext = ({ children } : {children: ReactNode}) => {
     await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/usuarios/${session.data?.user?.name}/helpedAnimals`, {method: 'POST', body: JSON.stringify(animal), headers: {'Content-Type': 'application/json'}})
     mutate([...data , animal])
   }
+  const deleteHelpedAnimals = async (animalName: string) => {
+    await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/usuarios/${session.data?.user?.name}/helpedAnimals`, {method: 'PATCH', body: JSON.stringify({name: animalName}), headers: {'Content-Type': 'application/json'}})
+    mutate(data.filter((item: animalType) => item.name !== animalName))
+  }
   return (
-    <HelpedAnimalsContext.Provider value={{helpedAnimals: data, setHelpedAnimals}}>
+    <HelpedAnimalsContext.Provider value={{helpedAnimals: data, setHelpedAnimals, deleteHelpedAnimals}}>
       {children}
     </HelpedAnimalsContext.Provider>
   );

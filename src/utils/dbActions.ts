@@ -50,3 +50,34 @@ export const getSomeAnimals = async (animals: string[]) => {
         console.log(e)
     }
 }
+
+export const getAnimals = async (animals: string[], skip: number, limit: number) => {
+    const client = await clientPromise
+    const db = client.db('ecoRescate')
+    try{
+    const animals = await db.collection('animals').find().skip(skip).limit(limit).toArray()
+    return animals
+    }
+    catch(e){
+        console.log(e)
+    }
+}
+
+export const deleteHelpedAnimal = async (username: string, animalName: string) => {
+    const client = await clientPromise
+    const db = client.db('ecoRescate')
+    try{
+        const user = await db.collection('users').findOne({username: username})
+        if(user){
+            const newAnimals = user.helpedAnimals.filter((animal: string) => animal != animalName)
+            const result = await db.collection('users').updateOne({username: username}, {$set: {helpedAnimals: newAnimals}})
+            return result
+        }
+        else{
+           return false
+        }
+    }
+    catch(e){
+        console.log(e)
+    }
+}
