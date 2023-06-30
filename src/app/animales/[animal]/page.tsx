@@ -4,6 +4,7 @@ import AnimalHeIpInfoCard from "@/components/AnimalHeIpInfoCard"
 const Animalpage = async ({params} : {params : {animal : string}}) => {
   // animal por defecto pr si aago va mal, esto segurtamente se puede hacer mejor que asco me da jaja
   let animal : animalType = {
+    _id: "id",
     name: "paco",
     category: "EN",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam.",

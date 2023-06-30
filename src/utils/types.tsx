@@ -1,4 +1,5 @@
 export type animalType = {
+    _id: string,
     name: string,
     category: string,
     population_trend: string,

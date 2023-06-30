@@ -6,7 +6,7 @@ const FirstResults = ({animals} : {animals: animalType[]}) => {
     <>
      {animals.map((animal : animalType) => {
       return (
-      <AnimalCard animal={animal}/>
+      <AnimalCard animal={animal} key={animal._id}/>
       )
     })
     }
