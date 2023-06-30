@@ -4,7 +4,7 @@ import MoreResults from "@/components/MoreResults"
 const CountryPage = async ({params} : {params : {country : string}}) => {
   let animals : [] = []
   try{
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/${params.country}?page=0`, {cache: "no-cache"})
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/${params.country}?page=0`,{next: {revalidate: 3600 * 6}})
     const {data}  = await res.json()
     if(data){
       animals = data
@@ -12,6 +12,7 @@ const CountryPage = async ({params} : {params : {country : string}}) => {
   }
   catch(e){
     console.log(e)
+    return false
   }
   return (
     <div className="flex flex-col mt-5">

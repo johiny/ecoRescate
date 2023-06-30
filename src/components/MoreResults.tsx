@@ -11,7 +11,7 @@ const getKey = (pageIndex : number, previousPageData : any, setEndReached: Funct
     setEndReached(true)
     return null
   } // reached the end
-  return `http://localhost:3000/api/paises/mexico?page=${pageIndex + 1}`                    // SWR key
+  return `${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/mexico?page=${pageIndex + 1}`                    // SWR key
 }
 
 const MoreResults = () => {
