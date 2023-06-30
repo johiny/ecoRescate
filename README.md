@@ -38,7 +38,7 @@ Bio-Rescate es una plataforma virtual que te permite explorar la rica biodiversi
 
 ## Recursos adicionales
 
-- [Sitio web de Bio-Rescate](https://www.bio-rescate.com)
+- [Sitio web de Bio-Rescate](https://eco-rescate.vercel.app/)
 Únete a la misión de rescatar la biodiversidad latinoamericana y ayúdanos a proteger las especies en peligro de extinción. ¡Juntos podemos marcar la diferencia!
 
 ¡Disfruta de tu aventura en Bio-Rescate!
