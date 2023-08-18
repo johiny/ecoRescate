@@ -1,8 +1,8 @@
 const contactPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-[85vh]">
+    <div className="flex flex-col items-center justify-center lg:h-[85vh] h-[75vh]">
       <h1 className="text-4xl font-bold">Escribenos</h1>
-      <div className="flex flex-col items-center justify-around bg-slate-700 h-1/2 mt-5 w-2/4 p-5 rounded-lg text-center">
+      <div className="flex flex-col items-center justify-around bg-slate-700 h-1/2 mt-5 lg:w-2/4 p-5 mx-2 lg:mx-0 rounded-lg text-center">
         <div className="flex flex-row gap-5 w-full items-center mt-20">
           <p className="w-3/6 text-center">
             ¿tienes alguna duda o quieres hacer un aporte?

@@ -17,7 +17,7 @@ import chile from  "@/media/paises/chile.svg"
 import InteractiveCountry from "@/components/InteractiveCountry"
 const Map = () => {
   return (
-    <div className="relative md:w-7/12 w-screen px-5 md:px-0  h-screen">
+    <div className="relative md:w-7/12 w-screen md:px-0  h-[72vh] md:h-[88.5vh] px-2  overflow-y-scroll  map_container">
         <div className="relative dynamicMap w-full h-full">
        <InteractiveCountry country={{name:"Mexico", img:mexico}} size={300}/>
        <InteractiveCountry country={{name:"Guatemala", img:guatemala}} size={50} top={180} left={245}/>

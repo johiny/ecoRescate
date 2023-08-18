@@ -11,7 +11,7 @@ const AnimalHeIpInfoCard = ({animal}: {animal: animalType}) => {
         return animalExist
     }
   return (
-    <div className="flex-1 bg-ecoWhite  smallAnimalCard3 flex justify-center items-center flex-col">
+    <div className="flex-1 bg-ecoWhite  smallAnimalCard3 flex justify-center items-center flex-col p-4 lg:p-0 text-center">
         { session.status === "authenticated" ? 
         helpedAnimalsChecker() ? 
         <h2 className="text-ecoDarkGreen text-2xl">El {animal.name} ya está en tu lista de apadrinados</h2>

@@ -23,10 +23,10 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     console.log(e)
   }
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col lg:w-full mb-5 lg:mb-0">
         <h2 className="text-4xl font-bold text-center">{animal.name.toUpperCase()}</h2>
-        <div className="flex flex-row h-[80vh] mt-5 text-zinc-900">
-            <div className="w-1/3  bg-ecoWhite flex  flex-col ml-5 relative">
+        <div className="flex lg:flex-row flex-col-reverse  items-center lg:items-stretch gap-2  lg:h-[80vh] mt-5 text-zinc-900 overflow-y-hidden overflow-x-hidden">
+            <div className="lg:w-1/3 w-11/12  bg-ecoWhite flex  flex-col lg:ml-5 relative animal_description_card">
               <div className="h-1/2 overflow-hidden">
             <Image src={animal.img} alt="tapir" width={700} height={500} className="object-cover aspect-video"/>
             </div>
@@ -34,15 +34,15 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
                         {animal.description}
                 </p>
             </div>
-            <div className="w-2/3 flex flex-col mx-5 gap-3">
-                <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard1 flex justify-center items-center">
+            <div className="lg:w-2/3 flex flex-col lg:mx-5 w-11/12 gap-3">
+                <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard1 flex justify-center items-center p-4 lg:p-0">
                   {animal.category === "LC" ?
                     <h2 className=" text-2xl text-ecoDarkGreen">Preocupación menor</h2> :
                     animal.category === "VU" ?
                     <h2 className=" text-2xl text-orange-600">Vulnerable</h2> :
                     <h2 className=" text-2xl text-red-700">En peligro</h2>}
                 </div>
-                <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard2 flex justify-center items-center flex-col">
+                <div className="flex-1  bg-ecoWhite  border-b-2  smallAnimalCard2 flex justify-center items-center flex-col p-4 lg:p-0 ">
                     <h2 className=" text-2xl text-ecoDarkGreen">Tendencia Poblacional</h2>
                     <h2 className=" text-1xl text-ecoDarkGreen">{animal.population_trend}</h2>
                 </div>
