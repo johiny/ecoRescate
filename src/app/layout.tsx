@@ -9,7 +9,7 @@ import AppContext from '@/components/AppContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Conoce a tu amigo en peligro',
+  title: 'BioRescate',
   description: 'Conoce a tu amigo en peligro',
 }
 
