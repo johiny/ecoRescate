@@ -15,7 +15,6 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/animales/${params.animal}`, {cache: "no-cache"})
     const data = await res.json()
     if(data){
-      console.log(data)
       animal = data
     }
   }

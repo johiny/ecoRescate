@@ -8,7 +8,7 @@ const contactPage = () => {
             ¿tienes alguna duda o quieres hacer un aporte?
           </p>
           <textarea
-            className="w-full h-24  rounded-lg text-center text-black outline-none"
+            className="w-full py-10 h-28  rounded-lg text-center text-black outline-none"
             placeholder="Escribe aqui tu mensaje"
           ></textarea>
         </div>

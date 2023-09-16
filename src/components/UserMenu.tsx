@@ -18,6 +18,7 @@ const UserMenu = () => {
          <Image src={close} width={35} height={35} alt="user photo" className="absolute top-0 right-0 cursor-pointer"
          onClick={() => setMenuOpen(false)}/>
          <h3 className="text-ecoDarkGreen text-2xl">Hola {session.data?.user?.name || 'paco'}!</h3>
+         <hr className="w-full border-ecoDarkGreen"/>
          <h2 className="text-ecoDarkGreen text-1xl">Estos son los animales que estas apoyando</h2>
          <HelpedAnimals/>
     </div>
