@@ -11,8 +11,8 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     img:  "https://images.unsplash.com/photo-1463852247062-1bbca38f7805?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80",
     population_trend: "up",
   }
-  try{
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/animales/${params.animal}`, {cache: "no-cache"})
+  try{ 
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/animales/${params.animal}`, {cache: "force-cache", next : {revalidate : 60 * 60 * 24}})
     const data = await res.json()
     if(data){
       animal = data
