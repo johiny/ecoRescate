@@ -4,7 +4,7 @@ import MoreResults from "@/components/MoreResults"
 const CountryPage = async ({params} : {params : {country : string}}) => {
   let animals : [] = []
   try{
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/${params.country}?page=0`,{next: {revalidate: 3600 * 6}})
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/paises/${params.country}?page=0`,{next: {revalidate: 60 * 60 * 6}})
     const {data}  = await res.json()
     if(data){
       animals = data
