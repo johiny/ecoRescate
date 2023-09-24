@@ -12,7 +12,7 @@ const Animalpage = async ({params} : {params : {animal : string}}) => {
     population_trend: "up",
   }
   try{ 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/animales/${params.animal}`, {cache: "force-cache", next : {revalidate : 60 * 60 * 24}})
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/animales/${params.animal}`, { next : {revalidate : 60 * 60 * 24}})
     const data = await res.json()
     if(data){
       animal = data
